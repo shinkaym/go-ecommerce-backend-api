@@ -1,0 +1,47 @@
+{"level":"INFO","time":"2024-11-23T11:48:11.853+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T11:48:20.528+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T15:03:12.609+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"ERROR","time":"2024-11-23T15:03:12.611+0700","caller":"initialize/mysql.go:16","msg":"InitMysql initialization error","error":"dial tcp 127.0.0.1:33306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"github.com/shinkaym/go-ecommerce-backend-api/internal/initialize.checkErrorPanic\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/mysql.go:16\ngithub.com/shinkaym/go-ecommerce-backend-api/internal/initialize.InitMysql\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/mysql.go:28\ngithub.com/shinkaym/go-ecommerce-backend-api/internal/initialize.Run\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/run.go:12\nmain.main\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2024-11-23T15:03:55.670+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T15:03:55.679+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T19:09:23.159+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T19:09:23.182+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"ERROR","time":"2024-11-23T19:09:23.429+0700","caller":"initialize/redis.go:25","msg":"Redis initialization error: ","error":"dial tcp 127.0.0.1:6381: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"github.com/shinkaym/go-ecommerce-backend-api/internal/initialize.InitRedis\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/redis.go:25\ngithub.com/shinkaym/go-ecommerce-backend-api/internal/initialize.Run\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/run.go:13\nmain.main\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2024-11-23T19:12:33.635+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T19:12:33.640+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"ERROR","time":"2024-11-23T19:12:33.829+0700","caller":"initialize/redis.go:25","msg":"Redis initialization error: ","error":"dial tcp 127.0.0.1:6381: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"github.com/shinkaym/go-ecommerce-backend-api/internal/initialize.InitRedis\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/redis.go:25\ngithub.com/shinkaym/go-ecommerce-backend-api/internal/initialize.Run\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/internal/initialize/run.go:13\nmain.main\n\tC:/Users/khoap/go/github.com/shinkaym/go-ecommerce-backend-api/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2024-11-23T19:20:37.806+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T19:20:37.811+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T19:22:37.605+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T19:22:37.610+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T19:22:37.731+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:07:18.225+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:07:18.281+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:07:18.508+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:07:29.193+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:07:29.199+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:07:29.342+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:11:12.689+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:11:12.694+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:11:12.812+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:12:09.970+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:12:09.975+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:12:10.089+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:14:28.971+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:14:28.976+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:14:29.091+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:14:43.081+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:14:43.086+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:14:43.207+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:14:55.242+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:14:55.247+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:14:55.352+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:18:15.564+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:18:15.571+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:18:15.703+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:24:27.719+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:24:27.723+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:24:27.830+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-11-23T21:32:28.775+0700","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-11-23T21:32:28.781+0700","caller":"initialize/mysql.go:29","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-11-23T21:32:28.884+0700","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
