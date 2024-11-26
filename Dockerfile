@@ -1,17 +1,13 @@
-FROM golang:alpine AS builder
+FROM golang:alpine
 
-WORKDIR /build
+RUN apk add --no-cache git
+
+WORKDIR /app
 
 COPY . .
 
 RUN go mod download
 
-RUN go build -o backend_api ./cmd/server
+EXPOSE 8002
 
-FROM scratch
-
-COPY ./config /config
-
-COPY --from=builder /build/backend_api /
-
-ENTRYPOINT ["/backend_api", "config/local.yaml"]
+CMD ["go", "run", "./cmd/server"]

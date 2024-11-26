@@ -1,5 +1,12 @@
 package repo
 
+import (
+	"fmt"
+
+	"github.com/shinkaym/go-ecommerce-backend-api/global"
+	"github.com/shinkaym/go-ecommerce-backend-api/internal/model"
+)
+
 // type UserRepo struct{}
 
 // func NewUserRepo() *UserRepo {
@@ -24,5 +31,7 @@ func NewUserRepository() IUserRepository {
 
 // GetUserEmail implements IUserRepository
 func (ur *userRepository) GetUserByEmail(email string) bool {
-	panic("unimplement")
+	row := global.Mdb.Table(TableNameGoCrmUser).Where("usr_email = ?", email).First(&model.GoCrmUser{}).RowsAffected
+	fmt.Println("Email row:", row)
+	return row != NumberNull
 }

@@ -17,7 +17,8 @@ import (
 // rename InitUserRouterHandler func to avoid duplication
 func InitUserRouterHandler() (*controller.UserController, error) {
 	iUserRepository := repo.NewUserRepository()
-	iUserService := service.NewUserService(iUserRepository)
+	iUserAuthRepository := repo.NewUserAuthRepository()
+	iUserService := service.NewUserService(iUserRepository, iUserAuthRepository)
 	userController := controller.NewUserController(iUserService)
 	return userController, nil
 }
