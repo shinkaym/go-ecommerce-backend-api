@@ -98,3 +98,12 @@
 {"level":"INFO","time":"2024-11-28T04:20:58.611Z","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
 {"level":"INFO","time":"2024-11-28T04:20:58.620Z","caller":"initialize/mysql.go:30","msg":"Initializing MySQL successfully"}
 {"level":"INFO","time":"2024-11-28T04:20:58.622Z","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-12-01T01:48:13.949Z","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-12-01T01:48:13.961Z","caller":"initialize/mysql.go:30","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-12-01T01:48:13.963Z","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-12-01T01:52:16.153Z","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-12-01T02:00:11.209Z","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"INFO","time":"2024-12-01T02:00:11.218Z","caller":"initialize/mysql.go:30","msg":"Initializing MySQL successfully"}
+{"level":"INFO","time":"2024-12-01T02:00:11.220Z","caller":"initialize/redis.go:48","msg":"value score is::","score":"100"}
+{"level":"INFO","time":"2024-12-01T02:13:28.446Z","caller":"initialize/run.go:11","msg":"Config Log ok!!","ok":"success"}
+{"level":"ERROR","time":"2024-12-01T02:13:28.454Z","caller":"initialize/mysql.go:17","msg":"InitMysql initialization error","error":"dial tcp 172.23.0.2:3306: connect: connection refused","stacktrace":"github.com/shinkaym/go-ecommerce-backend-api/internal/initialize.checkErrorPanic\n\t/app/internal/initialize/mysql.go:17\ngithub.com/shinkaym/go-ecommerce-backend-api/internal/initialize.InitMysql\n\t/app/internal/initialize/mysql.go:29\ngithub.com/shinkaym/go-ecommerce-backend-api/internal/initialize.Run\n\t/app/internal/initialize/run.go:12\nmain.main\n\t/app/cmd/server/main.go:6\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:272"}

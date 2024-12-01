@@ -1,14 +1,16 @@
 package service
 
 import (
+	"context"
+	"encoding/json"
 	"fmt"
-	"strconv"
 	"time"
 
+	"github.com/segmentio/kafka-go"
+	"github.com/shinkaym/go-ecommerce-backend-api/global"
 	"github.com/shinkaym/go-ecommerce-backend-api/internal/repo"
 	"github.com/shinkaym/go-ecommerce-backend-api/internal/utils/crypto"
 	"github.com/shinkaym/go-ecommerce-backend-api/internal/utils/random"
-	"github.com/shinkaym/go-ecommerce-backend-api/internal/utils/sendto"
 	"github.com/shinkaym/go-ecommerce-backend-api/response"
 )
 
@@ -83,10 +85,24 @@ func (us *userService) Register(email string, purpose string) int {
 	// 	return response.ErrSendEmailOtp
 	// }
 
-	err = sendto.SendEmailToJavaByAPI(strconv.Itoa(otp), email, "otp-auth.html")
+	// OR 4.send OTP by JAVA
+	// err = sendto.SendEmailToJavaByAPI(strconv.Itoa(otp), email, "otp-auth.html")
+
+	// OR 4.send OTP via Kafka JAVA
+	body := make(map[string]interface{})
+	body["otp"] = otp
+	body["email"] = email
+	bodyRequest, _ := json.Marshal(body)
+	message := kafka.Message{
+		Key:   []byte("otp-auth"),
+		Value: []byte(bodyRequest),
+		Time:  time.Now(),
+	}
+	err = global.KafkaProducer.WriteMessages(context.Background(), message)
+
 	if err != nil {
 		return response.ErrSendEmailOtp
 	}
-	
+
 	return response.ErrCodeSuccess
 }

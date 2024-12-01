@@ -1,6 +1,8 @@
 package repo
 
 import (
+	"fmt"
+
 	"github.com/shinkaym/go-ecommerce-backend-api/global"
 	"github.com/shinkaym/go-ecommerce-backend-api/internal/database"
 )
@@ -35,6 +37,7 @@ func NewUserRepository() IUserRepository {
 func (ur *userRepository) GetUserByEmail(email string) bool {
 	// row := global.Mdb.Table(TableNameGoCrmUser).Where("usr_email = ?", email).First(&model.GoCrmUser{}).RowsAffected
 	// fmt.Println("Email row:", row)
+	fmt.Printf("GetUserByEmail: %s", email)
 	user, err := ur.sqlc.GetUserByEmailSQLC(ctx, email)
 	if err != nil {
 		return false
